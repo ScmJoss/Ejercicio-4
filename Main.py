@@ -3,9 +3,9 @@
 # Proyecto: Logística de Entregas Inteligentes
 # ==========================================
 
-from funciones import *
-from archivos import *
-from grafo import Grafo
+from Funciones import *
+from Archivos import *
+from Grafo import Grafo
 
 # ==========================================
 # CARGAR DATOS
@@ -59,6 +59,8 @@ while True:
 
     opcion = input("\nSeleccione una opción: ")
 
+    
+  
     if opcion == "1":
         agregar_cliente(clientes)
 
@@ -120,13 +122,6 @@ while True:
 
     elif opcion == "19":
 
-        guardar_todo(
-            clientes,
-            paquetes,
-            repartidores
-        )
-
-        print("\nDatos guardados.")
         print("Gracias por utilizar el sistema.")
 
         break
